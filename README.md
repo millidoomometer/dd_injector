@@ -2,16 +2,16 @@ dd_injector
 inject desired custom metrics do datadog
 
 examples included:
-** access_log_check (dd_injector.Stats)
+ * access_log_check (dd_injector.Stats)
 check size and age of given access log
 
-** process_check (dd_injector.Service)
+ * process_check (dd_injector.Service)
 check if process is running, 1 or 0
 
-** s3_log_check (dd_injector.Stats)
+ * s3_log_check (dd_injector.Stats)
 this is a very custom check, we have fluentd copying certain logs to corresponding buffer files and want to monitor the sizes/ages, makes use of dd_injector.Stats
 
-** injection of metrics uses dd_injector.DD
+ * injection of metrics uses dd_injector.DD
 
 Example configuration
 ```
